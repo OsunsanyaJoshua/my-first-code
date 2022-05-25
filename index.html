@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>my first web page </title>
+<style>
+
+    .nav {
+    
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background: black;
+    overflow:hidden;}
+     
+    li a{
+    float: left ;
+     }
+    
+    li a { display: block;
+      color: white;
+      text-align: left;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: green;
+      }
+
+       td, th {border :1px solid white;
+      border-collapse:collapse;
+      background-color:#96D4D4;
+      border-radius:10px;
+      border-style:inset;
+      text-align: center;
+      padding:15px;
+      }
+      th:hover{background-color:white;} 
+      td:hover{background-color:white;}
+      .go {padding: 15px ;
+      background-color:#D4EEEE;
+      border:1px solid white;
+      text-align:left
+
+      }
+      .come {padding: 20px;
+      border:1px solid white;
+      background-color:#D4EEEE;
+      text-align: center;
+      }
+      .Calc{text-align: center;
+      }
+    </style>
+    </head>
+    <body>
+      
+        <ul class="nav">
+            <li><a href="#Home" target="blank">Home</a></li>
+            <li><a href="#Contact"target="blank">Contact</a></li>
+            <li><a href="#Register"target="blank">Register</a></li>
+            <li><a href="#Login" target="blank">Login</a></li>
+            <li><a href="#Calculator" target="blank">Calculator</a></li>
+          
+          </ul>
+           <!--comments-->
+           <div id="Home"class="go">
+        <h2 id="top"style="font-family:Verdana, Geneva, Tahoma, sans-serif">Welcome to my page </h2>
+        <p>Hi all, I'm Osunsanya Joshua, friends call me "Jfather" but ladies call me "Josh". I am a Doctor by profession currently undergoing the National Youth Service at Federal Medical Center,Bida. I am a 26 year old male, who hails from Ijebu-Ode, Ogun State and  I reside in Lagos State. </p>
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Goals For this Course</h3>
+        <ol type="i">
+          <li>Get Certified</li>
+          <li>To learn a new programming language</li>
+          <li>Improve soft Skills</li>
+          <li>Increase Professional Network</li>
+          <li>Complete a coding project</li>
+          <li>Debug a program or system</li>
+
+        </ol>
+
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Education</h3>
+        <ul list-style-type="circle"> 
+          <li>First School Leaving Certificate ----------------2000-2006</li>
+          <li>West Africa Senior School Certificate------------2006-2012</li>
+          <li>Bachelor of Dental Surgery-----------------------2012-2019</li>
+          <li>Diploma in Software Engineering(In View)---------2022-    </li>
+        </ul>
+
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Job Experience</h3>
+      <ul list-style-type="square">
+        <li>Research Assistant---------------- ----------------------May 2019-July 2019</li>
+        <li>Internship(University of Abuja Teaching Hospital,Abuja---October 2020-October 2021</li>
+        <li>National Youth Service Corps-----------------------------October 2021- </li>
+      </ul>
+
+      <h3  style="font-family:Verdana, Geneva, Tahoma, sans-serif">Hobbies & Skills</h3>
+      <ul list-style-type="square">
+        <li>Coding</li>
+        <li>Playing and Watching Football</li>
+        <li>Making Friends</li>
+        <li>Reading</li>
+        <li>Womanizing</li>
+        <li></li>
+      </ul>
+    </div>
+    <div id="Contact">
+      <h2>Contact</h2>
+      <Form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required></input><br>
+        <label for="email">Email</label><br>
+        <input type="Email" id="email" name="email" required></input><br>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" row="10" col="30"></textarea> <br><br>
+        <input type="submit" value="Submit"></input><br><br>
+      </Form>
+    </div>
+    <div id="Register" class="go">
+      <h2>Registration </h2>
+      <form>
+        <fieldset>
+          <legend><strong>Kindly Fill in your details</strong></legend>
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname" required><br>
+       <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br>
+        <label for="tel">Enter your Telephone Number:</label> <br>
+        <input type="tel" id="tel" name="tel" placeholder="+234-7089200440"><br>
+        <label for="gender">Gender</label><br>
+        <input list="gender" name="gender" ><br>
+        <datalist id="gender">
+          <option value="Male">
+            <option value="female">
+        </datalist> 
+        <label for="country">Country</label><br>
+        <input type="country" id="country" name="country" required><br>
+        <label for="state">State</label><br>
+        <input type="text" id="state" name="state"><br>
+        <label for="username">Username:</label><br>
+        <input type="password" id="username" name="username" required><br>
+        <label for="confirmpass">Confirm Password:</label><br>
+        <input type="password" id="confirmpass" name="confirmpass"> <br><br>
+        <input type="Submit" value="Submit">
+      </fieldset>
+      </form>
+    </div>
+    <div id="Login">
+      <h2>Login Page </h2>
+      <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="username" name="username" required><br><br>
+        <button type="submit">Login</button>
+        <button type="button">Sign-up</button>
+      
+      </form>
+    
+    </div>
+      <div id="Calculator" class="go" >
+      <h2>Calculator</h2>
+    
+      <table width=25%>
+        <textarea name="" id="" cols="49" rows="12" border-style="1.5px solid black"> </textarea>
+        
+      <tr>
+        <th>%</th>
+        <th><i>CE</i>
+          <th><i>C</i></th>
+        <th>*</th>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>  
+          <td>/</td>
+          
+        </tr>
+        
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>-</td>
+        </th>
+      
+         <tr>
+       
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>+</td>
+       
+        </tr>
+        <tr>
+       
+          <td><sup>+</sup>/-</td>
+          <td>0</td>
+          <td>.</td>
+          <td>=</td>
+        
+        </tr>
+
+      
+    </table>
+  </div>
+  <footer >
+  <a href="#Top">Jump toTop</a> </footer>
+    </body>
+</html>
